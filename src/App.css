@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-app {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-wrapper {
+  height: 50%;
+  width: 50%;
+}
+.header {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgb(0 0 0 / 60%);
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 2em;
+  line-height: 2.3em;
+  font-weight: bold;
+}
+.todo-form {
+  border-top: 1px solid;
+  display: flex;
+}
+.todo-form input {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 15%);
+  padding: 7px 10px;
+  font-size: 1.5rem;
+  border-top-left-radius: 4 px;
+  border-bottom-left-radius: 4 px;
+  color: #000;
+  outline: 0;
+  border: 0;
+  flex: 1;
+}
+.todo-form button {
+  color: #2980b9;
+  background: #fff;
+  padding: 0 15px;
+}
+button {
+  color: #2980b9;
+  background: #fff;
+  padding: 9px 16px;
+}
+.todo-list-wrapper {
+  display: flex;
+  border: 1px solid black;
+}
+.todo-list {
+  height: 109%;
+  overflow-x: hidden;
+}
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  padding: 8px 12px;
+  background-color: cornsilk;
+  font-size: 1.7rem;
+}
+
+.completed {
+  background-color: red !important;
+  color: white;
+  text-decoration: line-through;
+}
+.noedit {
+  cursor: not-allowed !important;
+}
+.todo-update-modal {
+  position: absolute;
+  position: absolute;
+  width: 50%;
+  height: 7rem;
+  top: 265px;
+  display: flex;
+  background-color: blueviolet;
+  flex-direction: column;
+  border-radius: 1px;
+}
+.todo-update-input {
+  flex: 1;
+}
+.todo-update-submit {
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 1em;
+    line-height: 2.4em;
+  }
+  .todo {
+    background: #fff;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 15%);
+    flex: 1 1;
+    padding: 2px 5px;
+    background-color: cornsilk;
+    font-size: 0.8rem;
+  }
+  .todo-form input {
+    font-size: 0.5rem;
+  }
+  .todo-update-modal {
+    top: 14rem;
+    height: 4rem;
+  }
+  button {
+    padding: 0px 0px;
+  }
+}
